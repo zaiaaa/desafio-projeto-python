@@ -27,8 +27,8 @@ while True:
     opcao = int(input(menu))
 
     if opcao == 0:
-        print("Quanto deseja sacar?")
-        saque = float(input())
+        print(f"Quanto deseja sacar? (Saldo: R${saldo:.2f})")
+        saque = float(input("R$ "))
         if saque > LIMITE_SAQUE:
             print("Você não pode sacar mais que R$ 500.00")
             print("aguarde...")
@@ -71,11 +71,13 @@ Saques realizador = {qtd_saque}
 Depósitos realizados = {qtd_deposito}
 
 saldo = {saldo}
-
-
+=================
         """)
         t.sleep(5)
     elif opcao == 3:
         break
+    else:
+        print("Opção inválida")
+        t.sleep(1.5)
 
     limpar_console()
