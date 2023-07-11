@@ -67,7 +67,7 @@ while True:
         print(f"""
 ===Extrato===
 Quantidade de saques restante = {LIMITE_SAQUE_DIARIO}
-Saques realizador = {qtd_saque}
+Saques realizados = {qtd_saque}
 Depósitos realizados = {qtd_deposito}
 
 saldo = {saldo}
